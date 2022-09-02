@@ -816,6 +816,40 @@ color: #010718;
     padding: 8px;
 
 }
+
+@media (min-width: 300px) and (max-width: 991px){
+
+    .carrier-foot
+    {
+    height: 670px;
+    text-align: center;
+    background-color: #010718;
+    padding: 10px;
+    color: #f5f5f5;
+    }
+    .carrier-foot .foot-logo h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    }
+
+    .carrier-foot .foot-desc ul li{
+    list-style: none;
+    padding: 8px;
+    margin: 40px 0;
+    display: inline;
+    }
+    .carrier-foot .foot-contact{
+    display: block;
+    height: auto;
+    margin: 35px auto;
+    }
+
+
+    .carrier-foot .foot-contact h2::before
+{
+    display: none;
+}
+}
 /* ======/Carrières Styles====== */
 
 
