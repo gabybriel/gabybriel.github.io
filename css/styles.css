@@ -1,0 +1,820 @@
+/* --Styles Général --*/
+body
+{
+    font-family: 'Lucida',sans-serif;
+    background-color: #ccc;
+}
+.sections
+{
+    padding: 20px 0;
+}
+.row
+{
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.section-header
+{
+    margin-top: 70px;
+    border-bottom: 2px solid #888;
+}
+.section-header .section-tilte
+{
+    font-size: 40px;
+}
+.section-header .line
+{
+    width: 200px;
+    height: 3px;
+    background: #ddd;
+    margin: auto;
+    border-radius: 3px;
+}
+.section-header .line span
+{
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+    border-radius: 3px;
+}
+
+.section-header p
+{
+    margin: 15px auto;
+    color: #101010;
+    font-size: 20px;
+    padding: 10px 0;
+}
+/* --/Styles Général-- */
+/* --HEADER-- */
+header
+{
+    height: 100px;
+    padding: 10px 0;
+    top: 0;
+    left:0 ;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-bottom: 1px solid #101010;
+    width: 100%;
+    z-index: 100;
+}
+
+/* --Home Section --*/
+.home
+{
+    height: 700px;
+    background-image: url(../Images/01.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home .home-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home .home-title
+{
+    color: #f5f5f5;
+    font-size: 45px;
+    margin-bottom: 20px;
+    
+}
+.home .home-desc
+{
+    color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px;
+}
+.home .button
+{
+    background-color: #7cb62f;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+}
+.home .button a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+.home .button:hover, .home .button a:hover
+{
+    text-decoration: none;
+    background-color: #618d26;
+}
+
+/*---Annimer le chévron---*/
+@keyframes fadeInFrom{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+} 
+@keyframes floating{
+    0%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    50%{
+        transform: translate(0%, 10%) rotate(360deg);
+    }
+    75%{
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+    100%{
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+.home .button a i{
+    animation: fadeInFrom .5s linear forwards, floating ease 1s infinite;
+    transition: all .2s ease-in;
+    z-index: -1;
+    overflow: hidden;
+
+}
+
+/* --Responsive home section-- */
+@media (min-width: 300px) and (max-width:991px){
+    .home .home-title
+    {
+        font-size: 25px;
+    }   
+    .home .home-desc
+    {
+        font-size: 18px;
+        padding: 0;
+    }
+}
+/* --/Home Section --*/
+/* ---ABOUT--- */
+.about
+{
+    background-color: #ddd;
+}
+.section-header p span
+{
+    color:#7cb62f;
+}
+.about .about-info
+{
+    margin: 20px auto;
+    padding: 10px 0;
+}
+.about .about-info h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.about .about-info h3 span
+{
+    color: #7cb62f;
+}
+.about .about-info ul li
+{
+    font-size: 19px;
+    list-style-type: circle;
+
+}
+.about .about-info .about-info-desc
+{
+    line-height: 1.5;
+    font-size: 19px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.about .about-info .about-info-btn a
+{
+     color: #f5f5f5;
+}
+@media (min-width: 300px) and (max-width:991px){
+    .about .about-info
+    {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.about .about-info .about-info-btn
+{
+    background-color: #7cb62f;
+    padding: 10px 20px;
+    border: 0;
+    font-weight: bold;
+}
+.about .about-info-btn:hover, .about-info-btn a:hover
+{
+    text-decoration: none;
+    background-color: #618d26;
+}
+.about .about-img img
+{
+    width: 100%;
+    height: 460px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/* --New page ABOUT-- */
+.apropos
+{
+    background-color: #f7f7f7;
+    color: #000;
+}
+.apropos .section-info
+{
+    margin: 30px 0;
+    padding: 10px 0; 
+}
+
+.apropos .section-desc
+{
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.apropos .section-coord h3
+{
+    font-weight: normal;
+    font-size: 25px;
+    margin: 25px 0;
+}
+.apropos .section-coord .section-coord-desc p, a
+{
+    font-size: 18px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+.apropos .section-img img
+{
+    margin-top: 45px;
+    width: 100%;
+}
+.apropos .about-btn a
+{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (min-width: 300px) and (max-width:991px){
+    .apropos .section-desc, .apropos .section-coord
+    {
+        text-align: center;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .apropos .section-img img
+    {
+        height: 200px;
+        width: auto;
+    }
+    .apropos .section-img 
+    {
+        text-align: center;
+        margin-top: -40px;
+    }
+}
+
+/* --Services section-- */
+.services
+{
+    background-color: #ccc;
+}
+.services .serv{
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    margin: 8px;
+    border-radius: 15px;
+}
+.services .serv:hover
+{
+    box-shadow: 5px 5px 5px #888;
+    cursor: pointer;
+}
+.services .serv button
+{
+    background-color: #010718;
+    text-align: center;
+    padding:  10px auto;
+}
+.services .serv button a
+{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+.services .serv-title
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.services .serv-desc,
+.services .serv-desc ul li
+{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.services .serv-desc ul
+{
+    list-style: none;
+}
+
+/* ====Slide Carousel=== */
+
+.carousel
+{
+    background-color: #eee;
+    height: 400px;
+    padding: 25px;
+}
+.carousel .carousel-inner img
+{
+    height: 200px;
+    width: 30%;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 10px 35%;
+}
+.carousel .carousel-inner .carousel-caption
+{
+    font-size: 25px;
+    color: #010718;
+}
+.carousel .fleche
+{
+    height: 60px;
+    width: 50px;
+    margin: 100px;
+    margin-top: 100px;
+    background-color: #ddd;
+    color: #000;
+}
+.carousel .fleche:hover
+{
+    background-color: #ccc;
+}
+ .sections-header
+{
+    padding-top: 40px;
+    border-bottom: transparent;
+    background-color: #eee;
+}
+.sections-header .sections-tilte
+{
+    font-size: 40px;
+}
+.sections-header .lines
+{
+    width: 200px;
+    height: 3px;
+    background: #ddd;
+    margin: auto;
+    border-radius: 3px;
+}
+ .sections-header .lines span
+{
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+    border-radius: 3px;
+}
+@media (min-width: 300px) and (max-width:991px)
+{
+    .carousel
+{
+    background-color: #eee;
+    height: 200px;
+    padding: 25px 0;
+}
+.carousel .carousel-inner img
+{
+    height: 100px;
+    width: 30%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 35%;
+}
+}
+/* ===/slide Carousel==== */
+
+/* ===New pages Services=== */
+
+.service
+{
+    background-color: #ddd;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.service .service-info
+{
+    font-family: 'Poppins', 'Lucida', sans-serif;
+    padding: 25px;
+    margin: 30px 0;
+    background-color: #ccc;
+    border-radius: 9px;
+}
+.service .section-header
+{
+   
+    margin-top: -10px;
+    padding-top: 150px;
+
+}
+.service .sevice-title
+{
+    margin: 25px;
+    font-weight: bold;
+}
+.service .service-desc
+{
+    font-size: 25px;
+}
+.service .service-desc ul
+{
+    padding: 10px;
+    list-style-type: square;
+}
+.service .bureau
+{
+    width: 400px;
+}
+
+.service .betude img
+{
+    height: 420px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.service .mdp img
+{
+    height: 420px;
+    margin-top: 40px;
+    width: 370px;
+}
+@media (min-width: 300px) and (max-width:991px)
+{
+    .service .service-info
+    {
+        text-align: center;
+    }
+    .service .section-img img
+    {
+        height: 300px;
+    }
+    .service .section-img{
+        margin: 9px 25%;
+    }
+    .service .service-info .bureau
+    {
+        font-size: 18px;
+        text-align: left;
+        margin: 0 25px;
+    }
+    .service .betude img
+{
+    height: 300px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.service .mdp img
+{
+    height: 100px;
+    margin-top: 9px;
+    width: 200px;
+}
+}
+
+
+
+
+/* ===/New pages Services=== */
+
+/* --Footer section */
+.footer
+{
+    background-image: url(../Images/40.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+.footer .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.5);
+}
+.footer .foots{
+    padding: 10px;
+    text-align: center;
+    margin: 8px;
+    color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.footer .foots-title
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer .foots-desc
+{
+    font-size: 16px;
+    color: #f5f5f5;
+    margin-bottom: 15px;
+}
+.footer .foots-desc span a
+{
+    color: #f5f5f5;
+}
+.footer .foots-desc span a:hover
+{
+    color: #ccc;
+    font-style: italic;
+}
+.footer .foots-desc span
+{
+    display: block;
+    padding: 10px;
+    text-align: left;
+    color: #f5f5f5;
+}
+.footer .foots-desc a i
+{
+    font-size: 25px;
+    color: #f5f5f5;
+    padding: 10px;
+    margin:5px;
+    line-height: 2;
+}
+.footer .foots-desc a i:hover
+{
+    background-color: #ddd;
+    border-radius: 8px;
+    color: #010718;
+
+}
+@media (min-width: 300px) and (max-width:991px)
+{
+    .footer
+    {
+        background-color: #101010;
+        height: 500px;
+        width: 100%;
+        
+    }
+    .footer .foots-desc
+    {
+        color: #f5f5f5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .footer .foot-end
+    {
+        padding: 10px;
+        bottom: 0px;
+        text-align: center;
+    }
+    .footer .foot-end
+    {
+        margin-top: -20px;
+        text-align: center;
+        padding: 10px 0;
+        color: #f5f5f5;
+        font-size: 17px;
+        bottom: 0;
+    }
+
+}
+.footer .foot-end
+{
+    margin-top: -50px;
+    text-align: right;
+    padding: 10px;
+    color: #888;
+    bottom: 0;
+    cursor: pointer;
+}
+/* --/Footer section-- */
+/* =====CONTACT===== */
+.contact form, .section-ctc
+{
+    padding: 30px 8px;
+    margin: 25px 9px;
+}
+.contact form .blue
+{
+color: #010718;
+}
+.contact form label
+{
+    font-size: 18px;
+    font-family:'Poppins', 'Lucida',Verdana, sans-serif;
+}
+.contact form
+{
+    background-color: #eee;
+    align-items: center;
+}
+.contact form .button1
+{
+    outline: none;
+    background-color: #010718;
+    margin-left: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    width: 200px;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+.contact .section-ctc .section-coord
+{
+    height: 450px;
+    background-color: #010718;
+    padding: 45px;
+    font-size: 18px;
+    box-shadow: 6px 6px 3px #ddd;
+}
+.contact .section-ctc .section-coord p,
+.section-ctc .section-coord a{
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 15px;
+}
+.section-ctc .section-coord a:hover
+{
+    font-style: italic;
+}
+.google-map .row
+{
+    text-align: center;
+}
+.google-map .row .map
+{
+    text-align: center;
+    margin: 25px 10px;
+    padding: 30px 40px;
+}
+/* =====/CONTACT==== */
+
+/* ======Carrières Styles====== */
+.carriere .section-header
+{
+    margin-top: 70px;
+    border-bottom: 2px solid #888;
+}
+.carriere .section-header .section-tilte
+{
+    font-size: 40px;
+}
+
+/* =====Slide Styles===== */
+
+.slider
+{
+    height: 500px;
+    position: relative;
+}
+.slider img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0; 
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+.slider img.active
+{
+    opacity: 1;
+}
+
+/* =====/Slide Styles===== */
+.carriere .row{
+    padding: 25px 5%;
+    font-size: 20px;
+}
+
+
+.carrier-foot{
+    height: 250px;
+    background-color: #010718;
+    padding: 50px 25px;
+    color: #f5f5f5;
+}
+.carrier-foot .foot-logo{
+    display: flex;
+    width: auto;
+    padding: 10px;
+    margin-left: -75px;
+    align-items: center;
+}
+.carrier-foot .foot-logo img{
+    height: 150px;
+}
+.carrier-foot .foot-logo h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.carrier-foot .foot-logo h1 span{
+    color: blue;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.carrier-foot .foot-contact{
+    display: block;
+    height: auto;
+}
+.carrier-foot .foot-contact span{
+    display: block;
+    padding: 8px 0;
+} .carrier-foot .foot-contact span a,
+.carrier-foot .foot-contact button a,
+.carrier-foot .foot-desc  ul li a:hover{
+    color: #f5f5f5;
+    text-decoration: none;
+}.carrier-foot .foot-contact span a:hover
+
+{
+    font-style: italic;
+}
+.carrier-foot .foot-desc ul li{
+    list-style: none;
+    padding: 8px;
+
+}
+/* ======/Carrières Styles====== */
+
+
+
+.carrier-foot .foot-contact h2::before
+{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 130px;
+    background-color: #f5f5f5;
+    top: 40px;
+    left: 25%;
+}
+.carrier-foot .foot-desc ul li a::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.carrier-foot .foot-desc ul li:hover a::before{ 
+    opacity: 1;
+}
