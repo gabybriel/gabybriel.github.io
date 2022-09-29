@@ -11,10 +11,12 @@
     <!-- JavaScript Bundle with Popper -->
     <!-- BOXICON CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <!-- =====Nooveau liens==== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- /====Nouveau liens==== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Network Services </title>
@@ -31,7 +33,6 @@
           <div class="OpenMenu bx-menu"><img src="Images/menu.png" alt=""></div>
           <div class="logo">
             <a href="index.html"><img src="Images/dns-icon.png" alt="dns-icon" title="DIGITAL NETWORK SERVICES"></a>
-       
           </div>
           <div class="nav-links">
             <div class="sidebar-logo">
@@ -40,12 +41,12 @@
             </div>
             <ul class="links">
               <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="a_propos.html">A PROPOS</a></li>
+              <li><a href="index.html#about">A PROPOS</a></li>
               <li>
-                <a href="services.html">SERVICES</a>
+                <a href="index.html#sevices">SERVICES</a>
                 <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
                 <ul class="htmlCss-sub-menu sub-menu">
-                  <li><a href="services.html#emi">ENGINEERING MAINTENANCE & INSPECTION</a></li>
+                  <li><a href="serviceshtmlp#emi">ENGINEERING MAINTENANCE & INSPECTION</a></li>
                   <li><a href="services.html#mdp">MISE A DISPOSITION DU PERSONNEL</a></li>
                   <li class="more">
                     <span><a href="services.html#ITE">MAINTENANCE INDUSTRIELLE</a>
@@ -76,6 +77,62 @@
 
     
     <!-- HOME -->
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img1.jpg" class="d-block w-100" alt="FirstSlid">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="animate__animated animate__zoomIn animate__delay-1s">Engeneering Inspection</h5>
+              <p class="animate__animated animate__fadeInLeft animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <p class="animate__animated animate__zoomIn animate__delay-3s"><a href="#">En Savoir plus</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img2.jpg" class="d-block w-100" alt="SecandSlid">
+                <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__zoomIn animate__delay-1s">Engeneering Maintenance</h5>
+            <p class="animate__animated animate__fadeInBottomLeft animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <p class="animate__animated animate__zoomIn animate__delay-3s"><a href="#">En Savoir plus</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img5.jpg" class="d-block w-100" alt="ThirdSlid">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__zoomIn animate__delay-1s">Engeneering Construction</h5>
+            <p class="animate__animated animate__fadeInRight animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <p class="animate__animated animate__zoomIn animate__delay-3s"><a href="#">En Savoir plus</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
     <section class="sections home text-center" id="accueil">
         <div class="overlay">
             <div class="container">
@@ -305,7 +362,7 @@ Nos contrôleurs sont certifiés LEEA ou COFRAC ou équivalent.
                         </p>
                     </div>
                 </div> 
-                <p class="foots foot-end text-center" title="By Gaby_Briel">Copyright &copy 2022  Digital Network Services - Tous droits reservés </p>              
+                <p class="foots foot-end text-center" title="By Gaby_Briel">&copy 2022  Digital Network Services - Tous droits reservés </p>              
             </div>
         </div>
         </div>
