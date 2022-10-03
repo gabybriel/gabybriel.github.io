@@ -251,6 +251,10 @@ header
     margin: 30px 0;
     padding: 10px 0; 
 }
+.apropos .section-header .dns
+{
+	margin: 20px;
+}
 
 .apropos .section-desc
 {
@@ -495,9 +499,16 @@ header
     {
         text-align: center;
     }
+	.service .sevice-title
+	{
+		font-size: 20px;
+		text-align: center;
+		padding: auto 15px;
+	}
     .service .section-img img
     {
         height: 300px;
+	width: 300px;
     }
     .service .section-img{
         margin: 9px 25%;
