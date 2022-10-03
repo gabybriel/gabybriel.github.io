@@ -14,11 +14,13 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   height: 100px;
-  background: #010718;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
+}
+.sticky{
+  background-color: #010718;
 }
 nav .navbar{
   height: 100%;
@@ -28,7 +30,6 @@ nav .navbar{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  /* background: red; */
   padding: 0 50px;
 }
 .navbar .logo a{
@@ -123,13 +124,6 @@ nav .navbar .links li:hover .js-sub-menu{
   height: 95px;
   padding: 8px 0;
   margin-top: -8px;
-}
-.navbar .logo .lg-desc span{
-  display: block;
-  color: blue;
-  margin-top: -20px;
-  letter-spacing: 2px;
-  font-weight: 700;
 }
 @media (max-width:920px) {
   nav .navbar{
